@@ -23,7 +23,14 @@ body{
 a{
     color: inherit;
 }
-
+.black-button{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+    background-color:#151c22;
+}
 .container{
     width: 1170px;
     margin: 0 auto;
@@ -40,6 +47,12 @@ a{
     list-style: none;
     width: 400px;
 }
+
+.main-header-logo{
+    padding: 25px 0 20px;
+    margin: auto;
+}
+
 .user-navigation{
     display: flex;
     justify-content: flex-end;
@@ -67,31 +80,63 @@ a{
 }
 .main-header-nav-wrapper{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: center;
 }
 .promo{
-    background-color: #f1f2f4;
-    background-color: transparent;
+    background-color: #F1F2F4;
 }
 .promo-wrapper{
     display: flex;
     justify-content: flex-start;
 }
 .promo-text-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
     width: 520px;
-    
 }
+
 .promo-img-column{
     width: 430px;
     padding: 50px 50px;
+    margin-left: 50px;
+    background: url("../img/Shtrih.png") no-repeat left top,
+                url("../img/Shtrih-reverse.png") no-repeat right bottom;
 }
-.black-button{
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    color: #ffffff;
-    background-color:#151c22;
+.promo-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.promo-description{
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #727A82;
+}
+.promo-title{
+    font-family: 'Anton', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 128px;
+    line-height: 128px;
+    
+    margin: -14px 0 43px -5px;
+}
+.promo-button{
+    width: 219px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bestsellers{
+    padding-top: 138px;
 }
 .section-header{
     display: flex;
@@ -128,20 +173,37 @@ a{
     flex-direction: row-reverse;
     justify-content: flex-end;
 }
-.new-collection-text-column{
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    background-image: url("img\Shtrih.png");
-    background-repeat: repeat;
-    background-size: contain;
 
+.new-collection-text-column{
+    width: 470px;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0) 49.9%, black 49.9%, black 60%, rgba(0, 0, 0, 0) 60%) 
+              fixed,
+              linear-gradient(45deg, black 10%, rgba(0, 0, 0, 0) 10%) 
+              fixed;
+    background-size: 1em 1em;
+    padding-top: 31px;
+    padding-bottom: 34px;
 }
-.new-collection-text-column-info{
+.new-collection-text{
+    box-sizing: border-box;
+    padding: 52px 47px 28px 43px;
     width: 400px;
-    margin-top: 30px;
-    margin-bottom: 30px;
     background-color: #f1f2f4;
+}
+.new-collection-text>.date{
+    font-style: normal;
+}
+.new-collection-text > .text{
+    font-weight: normal;
+    font-size: 18px;
+    color: #727A82;
+}
+.new-collection-button{
+    width: 200px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .new-collection-img-column{
     width: 700px;
