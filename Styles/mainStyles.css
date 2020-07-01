@@ -260,3 +260,17 @@ a{
     padding:20px 15px;
 }
 
+/*Сеточные стили для страницы каталога*/
+
+/*body {
+     Временно для сетки 
+    background-image: url('https://assets.htmlacademy.ru/content/skills/3/case-01/catalog.jpg');
+    background-size: 1366px auto;
+    background-repeat: no-repeat;
+    min-width: 1366px;
+  }*/
+.catalog-header-wrapper{
+    background-color: #f1f2f4;
+    padding-top: 70px;
+    padding-bottom: 45px;
+}  
